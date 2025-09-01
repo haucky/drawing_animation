@@ -1,4 +1,4 @@
-# drawing_animation [![Pub](https://img.shields.io/pub/v/drawing_animation.svg)](https://pub.dartlang.org/packages/drawing_animation) [![awesome](https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square)](https://github.com/Solido/awesome-flutter)
+# drawing_animation [![Pub](https://img.shields.io/pub/v/drawing_animation.svg)](https://pub.dev/packages/drawing_animation) [![awesome](https://img.shields.io/badge/Awesome-Flutter-blue.svg?longCache=true&style=flat-square)](https://github.com/Solido/awesome-flutter)
 
 |**From static SVG assets**  | | See more examples in the [showcasing app](https://github.com/biocarl/drawing_animation/tree/master/example/example_03). |
 | :---             |     :---:                   |     :---:     |
@@ -100,7 +100,7 @@ Here is increasingly growing list with all available parameters and their visual
 | `scaleToViewport` <br/><br/> *Path objects are scaled to the available viewport while maintaining the aspect ratio. Defaults to true.*|  | |
 
 ## Supported SVG specifications
-   - Only path elements (`<path d="M3m1....">`) are supported for now. I'm currently considering to add [flutter_svg](https://pub.dartlang.org/packages/flutter_svg) as dependency for more complete SVG parsing.
+   - Only path elements (`<path d="M3m1....">`) are supported for now. I'm currently considering to add [flutter_svg](https://pub.dev/packages/flutter_svg) as dependency for more complete SVG parsing.
    - Attributes
      * stroke, only Hex-Color without alpha for now
      * stroke-width
@@ -126,7 +126,7 @@ For example with Inkscape:
   - Improve SVG parsing capabilities
     * Circles, rect etc.
     * Better color parsing incl. alpha for hex code and RGB(A)
-    * Subsitute SVG parsing logic with an mature parsering library as [flutter_svg](https://pub.dartlang.org/packages/flutter_svg)
+    * Subsitute SVG parsing logic with an mature parsering library as [flutter_svg](https://pub.dev/packages/flutter_svg)
   - Provide a way to overwrite color/brush etc. for `AnimatedDrawing.svg` - maybe also over `paints` object?
   - Define a [PathOrder] which maintains each Path and only sorts them relative to each other
   - Improve performance AnimatedDrawing.paths, for every rebuild all provided paths have to be parsed again. Is there a way to check Path-Objects for equality like Keys for widget? Idea: implementing a proxy for Path which creates a unique hash when command evoked
